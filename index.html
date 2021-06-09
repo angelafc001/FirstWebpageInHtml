@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Learn CSS</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito:wght@400;600&family=Titillium+Web&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nanum+Gothic&family=Nunito:wght@400;600&family=Titillium+Web&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">        
+        <!--Another way to add style is within the head add a style sheet-->
+        <!--<style>
+            h1{
+                color:aqua;
+            }
+            h2{
+                color:brown;
+                background: yellow;
+            }
+        </style>
+        -->
+        
+        <!--The recommended way to add styles with CSS is with an external style sheet-->
+        <link rel="stylesheet"  href="style.css"> <!--Links the style file with the html file-->
+    </head>
+    
+    <body>
+        <!--<h1 style="color:blueviolet; border: 3px solid blue; ">Let's eat icecream--> <!--one way to add css to your html is inline styling-->
+        <h1>Testing the header tag</h1>
+        <div class="square">
+        </div>
+        <div id="circle">I am a beautiful circle</div>
+        
+        <div class="container">
+<!--
+            If the style is embedded in the HTML, then the style will take presedence over CSS style
+            <h1>H1 - Playing with CSS is fun!</h1>
+            <h2>H2 - IDK what to say?!</h2>
+            <h3>H3 - Hello, this is a test :)</h3>
+            <div class="formating">
+                <div><b>I am so Bold!</b></div>
+                <div><i>I am leaning over :)</i></div>
+                <div><em>I am so emphasized...</em></div>
+                <div><strong>I am so strong</strong></div>
+                <div><del>Please don't delete me</del></div>
+                <div><mark>Mark my words!</mark></div>
+            </div>
+            <a href="#">Click me now!</a>
+-->
+            <div class="row">
+                <div class="col-3">
+                    <img src="kitty-window.jfif" class="borderImg" width="300" heig="500">
+                </div>
+                <div class="col-6">
+                    <img src="kitty-window.jfif" class="borderImg" width="300" heig="500">
+                </div>
+                 <div class="col-3">
+                    <img src="kitty-window.jfif" class="borderImg" width="300" heig="500">
+                </div>
+            </div>
+<!----------------------------------------------------->            <div class="row">
+                <div class="col-2">
+                    <img src="kitty-window.jfif" class="borderImg" width="300" heig="500">
+                </div>
+                <div class="col-7">
+                    <img src="kitty-window.jfif" class="borderImg" width="300" heig="500">
+                </div>
+                 <div class="col-4">
+                    <img src="kitty-window.jfif" class="borderImg" width="300" heig="500">
+                </div>
+            </div>
+            <div>
+                <button type="button" class="padding"> I am the best button!</button>
+            </div>
+<!--
+            <ul>
+                <li>I love cats!</li>
+                <li>I also love coding in :</li>
+                <ol>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ol>
+                <li>I wanna learn all the programming languages</li>
+            </ul>
+-->
+        </div>
+        
+        <!--how to direclty target an element with an style-->
+        
+    </body>
+</html>

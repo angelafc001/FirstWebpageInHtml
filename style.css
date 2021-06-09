@@ -1,0 +1,183 @@
+/*
+h1{
+    color:#7A6563;
+    text-shadow: 2px 2px 5px #ECE2D0;
+}
+
+h2{
+    color:#D3A588;
+    text-shadow: 1px 1px 3px #7a6563;
+}
+
+*/
+/*html is like the super parent*/
+
+/*making all h1 in the global html 'class' greenyellow */
+/*
+html h1{
+    color:greenyellow;
+} 
+body h1{
+    color:red;
+}
+
+*/
+/*hard override, do not use !important*/
+/*
+h1{
+    color:green !important; 
+}
+*/
+
+
+/*
+html{
+    font-family: "Times New Roman", serif, sans-serif;
+    
+}
+*/
+/*Each element selector has a value of 1*/ 
+/*When you have a declaration of elements of equal value, the one that comes last wins*/
+h1 /*, h2, h3*/{
+    color:#473335;
+    line-height: 2rem;
+    font-family: 'Nunito';
+}
+h2{
+    color:#473335;
+    line-height: 2rem; 
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h3{
+    color:#473335;
+    line-height: 2rem; 
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/*
+h2{
+    font-size: 30px;
+}
+*/
+
+body{
+/*
+    background-color:#ECE2D0;
+    text-align: center;
+    background-image: url(pencils.jfif);
+    background-repeat: no-repeat;
+    background-size:cover;
+*/
+    background-color: #ffcdb2;
+    text-align: center;
+}
+.formating{
+    font-size: 25px;
+    line-height: 2em;
+    color:#6d6875;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #b5838d;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+/*This is the best way to add style to an element*/
+.square{ /*To target a class, you start with '.' followed by the name of such class*/
+    width: 100px;
+    height: 100px;
+    background-color: #7FD1B9; 
+    margin:auto;
+}
+/*ids are usually used to have the HTML interacting with the JS*/
+#circle{/*To target an element by its id, start with '#' followed by the id of the element*/
+    color:#E56399;
+    font:40px;
+    
+}
+
+.container{
+    /*background: linear-gradient(to right, #00cf,#b3f0ff);*/
+}
+img{
+    max-width: 100%;
+    height: auto;
+    padding:5px;
+    margin:auto;
+    display: block;
+}
+
+.borderImg{
+    /*we are going to create a border for it*/
+    /**border:5px dashed red;**/    
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #b5838d;
+    padding: 5px;
+}
+button{
+    color: white;
+    background: red;
+    border-radius: 12px;
+    border:none;
+    font-size:25px;
+    padding: 10px 20px 40px 60px; /*it works clockwise top, right, bottom, left */
+}
+/*li is a descendant of ul*/
+ul li{
+    /*we are going to apply the style rules to all the li of the ul (nested styles)*/
+    color:white;
+    font-size: 20px;
+}
+
+ul >li{
+    /*when we use the > selector we are indicating the elements that are one level deep inherit the style rules*/
+    color:red;
+}
+
+.row{
+ 
+    display: flex;
+    width: 100%;
+    
+}
+/*Everytime a row is created, we want something to happen after it*/
+.row ::after{
+    display: block;
+    clear: both; /*with every new row, we start we clean rows*/
+    content:"";   
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+/*Takes the marging and padding of an element in a row and it make fit nicely in all of our columns*/
+*{
+    box-sizing: border-box;
+}
+/*class selector*/
+[class*="col-"]{
+    border: 2px solid red;
+    padding:15px;
+    float:left;
+}
